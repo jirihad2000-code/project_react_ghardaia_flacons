@@ -1,0 +1,181 @@
+.bouteille-cart {
+    text-align: center;
+    padding: 15px;
+}
+.bouteille-cart h2{
+    font-weight: 600 ;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 0 10px;
+}
+
+.producte-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    background: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 1px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.producte-card {
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: white;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: white;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: #0b1f3a;
+}
+p{
+    margin-top: 10px;
+    color: #0b1f3a;
+}
+.switcher-wrap{ 
+    display: flex; 
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.woocommerce-ordering{
+    color: #667085;
+}
+
+.btn-save {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    transition: transform 0.2s ease;
+}
+
+.producte-card .image {
+    max-width: 100%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.producte-card .product-text {
+    flex: 2;
+    min-width: fit-content;
+}
+
+.product-text h1 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.product-text p {
+    font-size: 15px;
+    color: #e65100;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Fiche Technique */
+.fiche-tech {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+}
+
+.fiche-tech h3 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.button-action {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-action .product-actions {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.button-action .btn-add {
+    background-color: #e65100;
+    color: white;
+    display: inline-flex;
+    border-radius: 1px;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    transition: background 0.2s;
+}
+@media (max-width: 768px) {
+    .producte-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}

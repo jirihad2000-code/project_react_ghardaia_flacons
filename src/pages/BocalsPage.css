@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{ 
+    padding: 0;
+}
+.bouteille-cart{
+    display: flex;
+    background: orangered;
+    width: 100%;
+    flex-direction: column;
+    min-height: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.bouteille-cart h2{
+    font-weight: 600 ;
+
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: white;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: white;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    color: #0b1f3a;
+}
+p{
+    margin-top: 10px;
+    color: #0b1f3a;
+}
+.switcher-wrap{ 
+    display: flex; 
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.woocommerce-ordering{
+    color: #667085;
+}
+.product-grid{
+     display: grid; 
+     margin-bottom:20px;
+     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+}

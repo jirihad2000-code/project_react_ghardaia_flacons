@@ -1,0 +1,37 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.breadcrumbs li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.breadcrumbs [aria-current="page"] {
+  color: white;
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: #aaa;
+}
