@@ -3,37 +3,37 @@ import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
 const bouteilles = [
-  { id: 1, image: '/assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
-  { id: 2, image: '/assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250 },
-  { id: 3, image: '/assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
+  { id: 1, image: 'assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
+  { id: 2, image: 'assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250 },
+  { id: 3, image: 'assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
 ];
 
 const bocals = [
-  { id: 4, image: '/assets/photos/BOC03.png', name: 'BOCAL003 02 KG', price: 42 },
-  { id: 5, image: '/assets/photos/BOC05.png', name: 'BOCAL005 01 KG', price: 250 },
-  { id: 6, image: '/assets/photos/BOC08.png', name: 'BOCAL008 02 KG', price: 250 },
-  { id: 7, image: '/assets/photos/BOC09.png', name: 'BOCAL009 03 KG', price: 250 },
+  { id: 4, image: 'assets/photos/BOC03.png', name: 'BOCAL003 02 KG', price: 42 },
+  { id: 5, image: 'assets/photos/BOC05.png', name: 'BOCAL005 01 KG', price: 250 },
+  { id: 6, image: 'assets/photos/BOC08.png', name: 'BOCAL008 02 KG', price: 250 },
+  { id: 7, image: 'assets/photos/BOC09.png', name: 'BOCAL009 03 KG', price: 250 },
 ];
 
 const bouchons = [
-  { id: 9, image: '/assets/photos/122.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-  { id: 10, image: '/assets/photos/134.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-  { id: 11, image: '/assets/photos/133.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-  { id: 12, image: '/assets/photos/143.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
+  { id: 9, image: 'assets/photos/122.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
+  { id: 10, image: 'assets/photos/134.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
+  { id: 11, image: 'assets/photos/133.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
+  { id: 12, image: 'assets/photos/143.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
 ];
 
 const preformes = [
-  { id: 13, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
-  { id: 14, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
-  { id: 15, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
-  { id: 16, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
+  { id: 13, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
+  { id: 14, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
+  { id: 15, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
+  { id: 16, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
 ];
 
 const poignees = [
-  { id: 17, image: '/assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
-  { id: 18, image: '/assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
-  { id: 19, image: '/assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
-  { id: 20, image: '/assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250 },
+  { id: 17, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
+  { id: 18, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
+  { id: 19, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
+  { id: 20, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250 },
 ];
 
 export const animateProductToCart = (event) => {
@@ -144,7 +144,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Bouteilles')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL + "/assets/image/43.jpg"} alt="Bouteilles" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL + "assets/image/43.jpg"} alt="Bouteilles" />
             {renderProductGrid(bouteilles)}
           </div>
         </div>
@@ -156,7 +156,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Bocals')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/32.jpg"} alt="Bocals" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/32.jpg"} alt="Bocals" />
             {renderProductGrid(bocals)}
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Bouchons')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/35.jpg"} alt="Bouchons" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/35.jpg"} alt="Bouchons" />
             {renderProductGrid(bouchons)}
           </div>
         </div>
@@ -180,7 +180,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Preformes')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/42.jpg"} alt="Preformes" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/42.jpg"} alt="Preformes" />
             {renderProductGrid(preformes)}
           </div>
         </div>
@@ -192,7 +192,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Poignees')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/40.jpg"} alt="poignees" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/40.jpg"} alt="poignees" />
             {renderProductGrid(poignees)}
           </div>
         </div>

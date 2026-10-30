@@ -6,14 +6,14 @@ import { animateProductToCart } from '../components/ProductsSection';
 
 
 const allPreformes = [
-    { id: 13, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
-    { id: 14, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
-    { id: 15, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
-    { id: 16, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
-    { id: 13, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
-    { id: 14, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
-    { id: 15, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
-    { id: 16, image: '/assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
+    { id: 13, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
+    { id: 14, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
+    { id: 15, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
+    { id: 16, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
+    { id: 13, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
+    { id: 14, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
+    { id: 15, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
+    { id: 16, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
     // يمكنك إضافة جميع قاروراتك هنا
 ];
 

@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-image">
-          <img src={import.meta.env.BASE_URL +"/assets/image/51.jpg"} alt="SARL Ghardaia Flacons" className="hero-logo" />
+          <img src={import.meta.env.BASE_URL +"assets/image/51.jpg"} alt="SARL Ghardaia Flacons" className="hero-logo" />
         </div>
       </div>
     </section>

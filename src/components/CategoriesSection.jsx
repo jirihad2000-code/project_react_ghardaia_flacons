@@ -31,11 +31,11 @@ function CategoryCard({ title, images }) {
 
 export default function CategoriesSection() {
   const categories = [
-    { title: 'Cosmétique', images: ['/assets/image/12.jpg', '/assets/image/13.jpg', '/assets/image/14.jpg'] },
-    { title: 'Pharmaceutique', images: ['/assets/image/15.jpg', '/assets/image/16.jpg', '/assets/image/17.jpg'] },
-    { title: 'Agro-alimentaire', images: ['/assets/image/18.jpg', '/assets/image/16.jpg', '/assets/image/10.jpg'] },
-    { title: 'Boissons', images: ['/assets/image/12.jpg', '/assets/image/13.jpg', '/assets/image/14.jpg'] },
-    { title: 'Détergents', images: ['/assets/image/23.jpg', '/assets/image/24.jpg', '/assets/image/26.jpg'] },
+    { title: 'Cosmétique', images: ['assets/image/12.jpg', 'assets/image/13.jpg', 'assets/image/14.jpg'] },
+    { title: 'Pharmaceutique', images: ['assets/image/15.jpg', 'assets/image/16.jpg', 'assets/image/17.jpg'] },
+    { title: 'Agro-alimentaire', images: ['assets/image/18.jpg', 'assets/image/16.jpg', 'assets/image/10.jpg'] },
+    { title: 'Boissons', images: ['assets/image/12.jpg', 'assets/image/13.jpg', 'assets/image/14.jpg'] },
+    { title: 'Détergents', images: ['assets/image/23.jpg', 'assets/image/24.jpg', 'assets/image/26.jpg'] },
   ];
 
   return (

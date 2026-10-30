@@ -72,7 +72,7 @@ export default function Header({
     <header className="header">
       <div className="container nav-wrap">
         <a className="brand" href="/#accueil" aria-label="SARL Ghardaia Flacons">
-          <img src={import.meta.env.BASE_URL +"/assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons"/>
+          <img src={import.meta.env.BASE_URL +"assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons"/>
         </a>
 
         <div

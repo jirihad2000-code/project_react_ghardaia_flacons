@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <a className="brand" href="#accueil" aria-label="SARL Ghardaia Flacons">
-            <img src={import.meta.env.BASE_URL +"/assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons" />
+            <img src={import.meta.env.BASE_URL +"assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons" />
           </a>
           <strong>GO FAR WITH US</strong>
           <p>

@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 
 export default function CompanySection() {
   const images = [
-    '/assets/entreprise/6.jpg',
-    '/assets/entreprise/7.jpg',
-    '/assets/entreprise/8.jpg',
-    '/assets/entreprise/9.jpg',
-    '/assets/entreprise/10.jpg',
-    '/assets/entreprise/11.jpg'
+    'assets/entreprise/6.jpg',
+    'assets/entreprise/7.jpg',
+    'assets/entreprise/8.jpg',
+    'assets/entreprise/9.jpg',
+    'assets/entreprise/10.jpg',
+    'assets/entreprise/11.jpg'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
