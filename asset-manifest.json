@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ghardaia-flacons/static/css/main.2b7ec8b5.css",
-    "main.js": "/ghardaia-flacons/static/js/main.23a531d1.js",
-    "static/js/453.e2bacf2c.chunk.js": "/ghardaia-flacons/static/js/453.e2bacf2c.chunk.js",
-    "index.html": "/ghardaia-flacons/index.html",
-    "main.2b7ec8b5.css.map": "/ghardaia-flacons/static/css/main.2b7ec8b5.css.map",
-    "main.23a531d1.js.map": "/ghardaia-flacons/static/js/main.23a531d1.js.map",
-    "453.e2bacf2c.chunk.js.map": "/ghardaia-flacons/static/js/453.e2bacf2c.chunk.js.map"
+    "main.css": "/project_react_ghardaia_flacons/static/css/main.2b7ec8b5.css",
+    "main.js": "/project_react_ghardaia_flacons/static/js/main.da4e1a79.js",
+    "static/js/453.e2bacf2c.chunk.js": "/project_react_ghardaia_flacons/static/js/453.e2bacf2c.chunk.js",
+    "index.html": "/project_react_ghardaia_flacons/index.html",
+    "main.2b7ec8b5.css.map": "/project_react_ghardaia_flacons/static/css/main.2b7ec8b5.css.map",
+    "main.da4e1a79.js.map": "/project_react_ghardaia_flacons/static/js/main.da4e1a79.js.map",
+    "453.e2bacf2c.chunk.js.map": "/project_react_ghardaia_flacons/static/js/453.e2bacf2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2b7ec8b5.css",
-    "static/js/main.23a531d1.js"
+    "static/js/main.da4e1a79.js"
   ]
 }
