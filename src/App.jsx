@@ -139,7 +139,8 @@ export default function App() {
   };
 
   return (
-    <Router basename= "/project_react_ghardaia_flacons">
+    <Router basename= {process.env.PUBLIC_URL ||
+ '/project_react_ghardaia_flacons'}>
       <div className="app-root">
         {/* Ticker Ribbon */}
         <div className="ticker-ribbon" id="ticker-ribbon" aria-hidden="true">
