@@ -45,7 +45,7 @@ export default function CompanySection() {
                 className={`card ${idx === currentIndex ? 'center' : 'hidden'}`}
                 style={{ display: idx === currentIndex ? 'block' : 'none' }}
               >
-                <img src={img} alt={`entreprise ${idx + 1}`} />
+                <img src={import.meta.env.BASE_URL +img} alt={`entreprise ${idx + 1}`} />
               </div>
             ))}
           </div>

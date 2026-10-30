@@ -6,14 +6,9 @@ import { animateProductToCart } from '../components/ProductsSection';
 
 
 const allBouteilles = [
-    { id: 1, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
+    { id: 1, image: '/assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
     { id: 2, image: '/assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250 },
     { id: 3, image: '/assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-    { id: 4, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-    { id: 1, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
-    { id: 2, image: '/assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250 },
-    { id: 3, image: '/assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-    { id: 4, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
     // يمكنك إضافة جميع قاروراتك هنا
 ];
 
@@ -57,7 +52,7 @@ export default function BouteillesPage({ addToCart, addToWishlist }) {
                                 <i className="fa-regular fa-heart"></i>
                             </button>
                             <div className="product-image" onClick={() => navigate(`/product/${prod.id}`)}>
-                                <img src={prod.image} alt={prod.name} />
+                                <img src={import.meta.env.BASE_URL+prod.image} alt={prod.name} />
                             </div>
                             <h2 className="product-title"><a href="#accueil" onClick={() => navigate(`/product/${prod.id}`)} title={prod.name} rel="bookmark">{prod.name}</a></h2>
                             <span className="price">

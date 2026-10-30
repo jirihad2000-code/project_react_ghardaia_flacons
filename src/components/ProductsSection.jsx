@@ -3,17 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
 const bouteilles = [
-  { id: 1, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
+  { id: 1, image: '/assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
   { id: 2, image: '/assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250 },
   { id: 3, image: '/assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
-  { id: 4, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
 ];
 
 const bocals = [
-  { id: 3, image: '/assets/photos/BOC03.png', name: 'BOCAL003 02 KG', price: 42 },
+  { id: 4, image: '/assets/photos/BOC03.png', name: 'BOCAL003 02 KG', price: 42 },
   { id: 5, image: '/assets/photos/BOC05.png', name: 'BOCAL005 01 KG', price: 250 },
-  { id: 8, image: '/assets/photos/BOC08.png', name: 'BOCAL008 02 KG', price: 250 },
-  { id: 9, image: '/assets/photos/BOC09.png', name: 'BOCAL009 03 KG', price: 250 },
+  { id: 6, image: '/assets/photos/BOC08.png', name: 'BOCAL008 02 KG', price: 250 },
+  { id: 7, image: '/assets/photos/BOC09.png', name: 'BOCAL009 03 KG', price: 250 },
 ];
 
 const bouchons = [
@@ -110,7 +109,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <i className="fa-regular fa-heart"></i>
           </button>
           <div className="product-image" onClick={() => navigate(`/product/${prod.id}`)}>
-            <img src={prod.image} alt={prod.name} title={prod.name} />
+            <img src={import.meta.env.BASE_URL + prod.image} alt={prod.name} title={prod.name} />
           </div>
           <h2 className="product-title" onClick={() => navigate(`/product/${prod.id}`)} title={prod.name}>
             {prod.name}
@@ -145,7 +144,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Bouteilles')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src="/assets/image/43.jpg" alt="Bouteilles" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL + "/assets/image/43.jpg"} alt="Bouteilles" />
             {renderProductGrid(bouteilles)}
           </div>
         </div>
@@ -157,7 +156,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Bocals')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src="/assets/image/32.jpg" alt="Bocals" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/32.jpg"} alt="Bocals" />
             {renderProductGrid(bocals)}
           </div>
         </div>
@@ -169,7 +168,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Bouchons')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src="/assets/image/35.jpg" alt="Bouchons" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/35.jpg"} alt="Bouchons" />
             {renderProductGrid(bouchons)}
           </div>
         </div>
@@ -181,7 +180,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Preformes')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src="/assets/image/42.jpg" alt="Preformes" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/42.jpg"} alt="Preformes" />
             {renderProductGrid(preformes)}
           </div>
         </div>
@@ -193,7 +192,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
             <button className="btn-discover" onClick={() => navigate('/Poignees')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src="/assets/image/40.jpg" alt="poignees" />
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"/assets/image/40.jpg"} alt="poignees" />
             {renderProductGrid(poignees)}
           </div>
         </div>

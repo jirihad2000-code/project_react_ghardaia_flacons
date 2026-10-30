@@ -15,7 +15,7 @@ function CategoryCard({ title, images }) {
       <div className="slider-container">
         <div className="slider-track" style={{ transform: `translateX(-${index * 100}%)` }}>
           {images.map((img, i) => (
-            <img key={i} src={img} alt={`${title} ${i + 1}`} />
+            <img key={i} src={import.meta.env.BASE_URL +img} alt={`${title} ${i + 1}`} />
           ))}
         </div>
         <div className="dots-container">

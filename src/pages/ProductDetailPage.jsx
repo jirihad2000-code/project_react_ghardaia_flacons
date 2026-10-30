@@ -9,17 +9,16 @@ import { animateProductToCart } from '../components/ProductsSection';
 
 const allProducts = [
     {/* Bouteilles */ },
-    { id: 1, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 1, image: '/assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
     { id: 2, image: '/assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250, category: 'Bouteilles', capacity: '250ml - 400ml', material: 'PET Plastique', weight: '30g', reference: 'B' },
     { id: 3, image: '/assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
-    { id: 4, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
     {/* Bocals */ },
     { id: 5, image: '/assets/photos/BOC03.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bocals', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 6, image: '/assets/photos/BOC05.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bocals', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 8, image: '/assets/photos/BOC08.png', name: 'BOCAL08 02 KG', price: 250, category: 'Bocals', material: 'PET', weight: '2Kg', reference: 'BOC' },
-    { id: 9, image: '/assets/photos/BOC09.png', name: 'BOCAL09 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 7, image: '/assets/photos/BOC08.png', name: 'BOCAL08 02 KG', price: 250, category: 'Bocals', material: 'PET', weight: '2Kg', reference: 'BOC' },
+    { id: 8, image: '/assets/photos/BOC09.png', name: 'BOCAL09 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     {/* Bouchons */ },
-    { id: 7, image: '/assets/photos/122.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouchons', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 9, image: '/assets/photos/122.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouchons', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 10, image: '/assets/photos/134.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouchons', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 11, image: '/assets/photos/133.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouchons', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 12, image: '/assets/photos/143.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouchons', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
@@ -93,7 +92,7 @@ export default function ProductDetailPage({
                         <div className="product-image">
                             <img
                                 className="image"
-                                src={product.image}
+                                src={import.meta.env.BASE_URL+product.image}
                                 alt={product.name}
                             />
                         </div>

@@ -7,10 +7,9 @@ import { animateProductToCart } from '../components/ProductsSection';
 const allProducts = [
 
     /* Bouteilles */
-    { id: 1, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 1, image: '/assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
     { id: 2, image: '/assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250, category: 'Bouteilles', capacity: '250ml - 400ml', material: 'PET Plastique', weight: '30g', reference: 'B' },
     { id: 3, image: '/assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
-    { id: 4, image: '/assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', capacity: '50ml', material: 'PET', weight: '45g', reference: 'B' },
     
     /* Bocals */
     { id: 1, image: '/assets/photos/BOC01.png', name: 'BOCAL001 0.5 KG', price: 21, category: 'Bocals', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
@@ -106,7 +105,7 @@ export default function ProduitsPage({ addToCart, addToWishlist }) {
                                 <i className="fa-regular fa-heart"></i>
                             </button>
                             <div className="product-image" onClick={() => navigate(`/product/${prod.id}`)}>
-                                <img src={prod.image} alt={prod.name} title={prod.name} />
+                                <img src={import.meta.env.BASE_URL+prod.image} alt={prod.name} title={prod.name} />
                             </div>
                             <h2 className="product-title"><a href="#accueil" onClick={() => navigate(`/product/${prod.id}`)} title={prod.name} rel="bookmark">{prod.name}</a></h2>
                             <span className="price">

@@ -56,7 +56,7 @@ export default function BouchonsPage({ addToCart, addToWishlist }) {
                                 <i className="fa-regular fa-heart"></i>
                             </button>
                             <div className="product-image" onClick={() => navigate(`/product/${prod.id}`)}>
-                                <img src={prod.image} alt={prod.name} />
+                                <img src={import.meta.env.BASE_URL+prod.image} alt={prod.name} />
                             </div>
                             <h2 className="product-title"><a href="#accueil" onClick={() => navigate(`/product/${prod.id}`)} title={prod.name} rel="bookmark">{prod.name}</a></h2>
                             <span className="price">

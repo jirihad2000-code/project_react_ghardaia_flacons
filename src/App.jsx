@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 import Header from './components/Header';
@@ -24,6 +24,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 
 export default function App() {
+  
   const [cart, setCart] = useState(() => {
     const saved = localStorage.getItem('health_cart');
     return saved ? JSON.parse(saved) : [];
@@ -139,7 +140,8 @@ export default function App() {
   };
 
   return (
-    <Router>
+    <React.StrictMode>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="app-root">
         {/* Ticker Ribbon */}
         <div className="ticker-ribbon" id="ticker-ribbon" aria-hidden="true">
@@ -252,6 +254,7 @@ export default function App() {
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
+    </React.StrictMode>
   );
 }
