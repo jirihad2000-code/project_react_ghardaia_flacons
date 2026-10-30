@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand">
-          <a className="brand" href="#accueil" aria-label="SARL Ghardaia Flacons">
-            <img src={import.meta.env.BASE_URL +"assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons" />
+          <a className="brand" href="/" aria-label="SARL Ghardaia Flacons">
+            <img src={import.meta.env.BASE_URL + "assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons" />
           </a>
           <strong>GO FAR WITH US</strong>
           <p>
@@ -23,7 +23,7 @@ export default function Footer() {
           <div className="footer-column">
             <h4 className="footer-title">Informations</h4>
             <ul className="men">
-              <li><a href="#accueil"><span className="arrow-icon">›</span>Accueil</a></li>
+              <li><a href="/"><span className="arrow-icon">›</span>Accueil</a></li>
               <li><a href="#entreprise"><span className="arrow-icon">›</span>Notre entreprise</a></li>
               <li><a href="#categories"><span className="arrow-icon">›</span>Catégories</a></li>
               <li><a href="#produits"><span className="arrow-icon">›</span>Produits</a></li>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header({
   cart,
@@ -71,10 +71,9 @@ export default function Header({
   return (
     <header className="header">
       <div className="container nav-wrap">
-        <a className="brand" href="/#accueil" aria-label="SARL Ghardaia Flacons">
-          <img src={import.meta.env.BASE_URL +"assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons"/>
+        <a className="brand" href="/" aria-label="SARL Ghardaia Flacons">
+          <img src={import.meta.env.BASE_URL + "assets/image/logo.png"} alt="Logo SARL Ghardaia Flacons" />
         </a>
-
         <div
           ref={menuToggleRef}
           className="menu-toggle"
@@ -87,12 +86,12 @@ export default function Header({
 
         {/*<nav className={`mainNav ${navOpen ? 'open' : ''}`} id="mainNav">*/}
         <ul ref={navRef} className={`nav-list ${navOpen ? 'open' : ''}`} id="mainNav">
-          <li><Link to="/" onClick={() => setNavOpen(false)}>Accueil</Link></li>
-          <li><Link to="/entreprise" onClick={() => setNavOpen(false)}>Entreprise</Link></li>
-          <li><a href="#categories" onClick={() => setNavOpen(false)}>Catégories</a></li>
+          <li><NavLink to="/" onClick={() => setNavOpen(false)}>Accueil</NavLink></li>
+          <li><NavLink to="/entreprise" onClick={() => setNavOpen(false)}>Entreprise</NavLink></li>
+          <li><NavLink to="/categories" onClick={() => setNavOpen(false)}>Catégories</NavLink></li>
           <li className="dropdown">
-            <Link to='/Produits'><span className="menu-text">Produits</span>
-            </Link>
+            <NavLink to='/Produits'><span className="menu-text">Produits</span>
+            </NavLink>
             <ul className="nav-list1">
               <li>
                 <Link to='/Bouteilles'>
@@ -138,8 +137,8 @@ export default function Header({
               </li>
             </ul>
           </li>
-          <li><a href="#qualite" onClick={() => setNavOpen(false)}>Qualité</a></li>
-          <li><a href="#contact" onClick={() => setNavOpen(false)}>Contact</a></li>
+          <li><NavLink to="/qualite" onClick={() => setNavOpen(false)}>Qualité</NavLink></li>
+          <li><NavLink to="/contact" onClick={() => setNavOpen(false)}>Contact</NavLink></li>
         </ul>
         {/*</nav>*/}
 
