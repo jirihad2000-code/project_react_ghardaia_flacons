@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 
 
 import Header from './components/Header';
@@ -139,7 +139,7 @@ export default function App() {
   };
 
   return (
-    <Router>
+    <BrowserRouter basename='project_react_ghardaia_flacons'>
       <div className="app-root">
         {/* Ticker Ribbon */}
         <div className="ticker-ribbon" id="ticker-ribbon" aria-hidden="true">
@@ -252,6 +252,6 @@ export default function App() {
 
         <Footer />
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
