@@ -2,7 +2,7 @@
   "name": "ghardaia-flacons",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://jirihad2000-code.github.io/project_react_ghardaia_flacons",
   "dependencies": {
     "@testing-library/dom": "^10.4.2",
     "@testing-library/jest-dom": "^6.9.1",
