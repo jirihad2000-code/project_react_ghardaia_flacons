@@ -22,7 +22,7 @@ const allBocals = [
     { id: 18, image: 'assets/photos/BOC20.png', name: 'BOCAL020 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 19, image: 'assets/photos/BOC21.png', name: 'BOCAL021 04 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 20, image: 'assets/photos/BOC22.png', name: 'BOCAL022 04 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 21, image: 'assets/photos/BOCB23.png', name: 'BOCAL023 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 21, image: 'assets/photos/BOC23.png', name: 'BOCAL023 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 22, image: 'assets/photos/BOC24.png', name: 'BOCAL024 02 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 23, image: 'assets/photos/BOC25.png', name: 'BOCAL025 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 24, image: 'assets/photos/BOC26.png', name: 'BOCAL026 02 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
