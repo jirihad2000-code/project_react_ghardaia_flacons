@@ -47,7 +47,7 @@ export default function ProductDetailPage({
     const product = allProducts.find((p) => p.id === parseInt(id, 10));
     const breadcrumbItems = [
         { label: "Accueil", href: "/" },
-        { label: product.category, href: `/${product.category}` },
+        { label: product.category, href: `${product.category}` },
         { label: product.name }
     ];
 
