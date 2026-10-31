@@ -7,6 +7,8 @@ export default defineConfig({
     port: 3000,
     open: true
   },
+  devServer: {
+    historyApiFallback: true
+  },
   base: "/project_react_ghardaia_flacons/",
-  plugins: [react()],
 });
