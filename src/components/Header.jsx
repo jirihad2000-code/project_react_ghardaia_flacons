@@ -86,7 +86,7 @@ export default function Header({
 
         {/*<nav className={`mainNav ${navOpen ? 'open' : ''}`} id="mainNav">*/}
         <ul ref={navRef} className={`nav-list ${navOpen ? 'open' : ''}`} id="mainNav">
-          <li><a href='/' onClick={() => setNavOpen(false)}>Accueil</a></li>
+          <li><Link to='/' onClick={() => setNavOpen(false)}>Accueil</Link></li>
           <li><Link to='/Entreprise' onClick={() => setNavOpen(false)}>Entreprise</Link></li>
           <li><Link to='/Categories' onClick={() => setNavOpen(false)}>Catégories</Link></li>
           <li className="dropdown">
