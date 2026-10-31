@@ -24,7 +24,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 
 export default function App() {
-  
+
   const [cart, setCart] = useState(() => {
     const saved = localStorage.getItem('health_cart');
     return saved ? JSON.parse(saved) : [];
@@ -74,7 +74,7 @@ export default function App() {
       return [...prevCart, { ...product, quantity: quantityToAdd }];
     });
   };
-  
+
 
   const changeQuantity = (id, direction) => {
     setCart((prevCart) =>
@@ -141,120 +141,136 @@ export default function App() {
 
   return (
     <React.StrictMode>
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
-      <div className="app-root">
-        {/* Ticker Ribbon */}
-        <div className="ticker-ribbon" id="ticker-ribbon" aria-hidden="true">
-          <div className="ticker-track">
-            <div className="ticker-item">SARL GHARDAIA FLACONS <span className="sep">◆</span></div>
-            <div className="ticker-item">GO FAR WITH US <span className="sep">◆</span></div>
-            <div className="ticker-item">TOUTES CAPACITÉS <span className="sep">◆</span></div>
-            <div className="ticker-item"><span className="arabic">شركة غرداية للقارورات</span> <span className="sep">◆</span></div>
-            <div className="ticker-item">TRANSFORMATION PLASTIQUE INDUSTRIELLE <span className="sep">◆</span></div>
-            <div className="ticker-item">BOUNOURA · GHARDAIA <span className="sep">◆</span></div>
-            <div className="ticker-item">LIVRAISON NATIONALE <span className="sep">◆</span></div>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <div className="app-root">
+          {/* Ticker Ribbon */}
+          <div className="ticker-ribbon" id="ticker-ribbon" aria-hidden="true">
+            <div className="ticker-track">
+              <div className="ticker-item">SARL GHARDAIA FLACONS <span className="sep">◆</span></div>
+              <div className="ticker-item">GO FAR WITH US <span className="sep">◆</span></div>
+              <div className="ticker-item">TOUTES CAPACITÉS <span className="sep">◆</span></div>
+              <div className="ticker-item"><span className="arabic">شركة غرداية للقارورات</span> <span className="sep">◆</span></div>
+              <div className="ticker-item">TRANSFORMATION PLASTIQUE INDUSTRIELLE <span className="sep">◆</span></div>
+              <div className="ticker-item">BOUNOURA · GHARDAIA <span className="sep">◆</span></div>
+              <div className="ticker-item">LIVRAISON NATIONALE <span className="sep">◆</span></div>
+            </div>
           </div>
-        </div>
 
-        <a href="https://wa.me/213797117055" className="whatsapp-float" target="_blank" rel="noreferrer">
-          <i className="fa-brands fa-whatsapp"></i>
-        </a>
+          <a href="https://wa.me/213797117055" className="whatsapp-float" target="_blank" rel="noreferrer">
+            <i className="fa-brands fa-whatsapp"></i>
+          </a>
 
-        {showScrollTop && (
-          <button onClick={scrollToTop} id="ttpbtn" className="GoToTopButton">
-            <i className="fa-solid fa-arrow-up-long"></i>
-          </button>
-        )}
+          {showScrollTop && (
+            <button onClick={scrollToTop} id="ttpbtn" className="GoToTopButton">
+              <i className="fa-solid fa-arrow-up-long"></i>
+            </button>
+          )}
 
-        <Header
-          cart={cart}
-          wishlist={wishlist}
-          totalPrice={calculateTotal()}
-          changeQuantity={changeQuantity}
-          updateQuantityManual={updateQuantityManual}
-          removeFromCart={removeFromCart}
-          removeFromWishlist={removeFromWishlist}
-        />
+          <Header
+            cart={cart}
+            wishlist={wishlist}
+            totalPrice={calculateTotal()}
+            changeQuantity={changeQuantity}
+            updateQuantityManual={updateQuantityManual}
+            removeFromCart={removeFromCart}
+            removeFromWishlist={removeFromWishlist}
+          />
 
-        <ScrollToTop />
+          <ScrollToTop />
 
-        <Routes>
-          {/* الصفحة الرئيسية */}
-          <Route path="/" element={
-            <main>
-              <Hero />
-              <Features />
+          <Routes>
+            {/* الصفحة الرئيسية */}
+            <Route path="/" element={
+              <main>
+                <Hero />
+                <Features />
+                <CompanySection />
+                <CategoriesSection />
+                <ProductsSection
+                  addToCart={addToCart}
+                  addToWishlist={addToWishlist}
+                />
+                <QualitySection />
+                <ContactSection />
+              </main>
+            } />
+
+            <Route path="/Entreprise" element={
               <CompanySection />
+            } />
+
+            <Route path="/Categories" element={
               <CategoriesSection />
-              <ProductsSection
+            } />
+
+            <Route path="/Qualite" element={
+              <QualitySection />
+            } />
+
+            <Route path="/Contact" element={
+              <ContactSection />
+            } />
+
+            {/* صفحة جميع المنتجات */}
+            <Route path="/Produits" element={
+              <ProduitsPage
                 addToCart={addToCart}
                 addToWishlist={addToWishlist}
               />
-              <QualitySection />
-              <ContactSection />
-            </main>
-          } />
+            } />
 
-          {/* صفحة جميع المنتجات */}
-          <Route path="/Produits" element={
-            <ProduitsPage
-              addToCart={addToCart}
-              addToWishlist={addToWishlist}
-            />
-          } />
+            {/* صفحة جميع القارورات */}
+            <Route path="/Bouteilles" element={
+              <BouteillesPage
+                addToCart={addToCart}
+                addToWishlist={addToWishlist}
+              />
+            } />
 
-          {/* صفحة جميع القارورات */}
-          <Route path="/Bouteilles" element={
-            <BouteillesPage
-              addToCart={addToCart}
-              addToWishlist={addToWishlist}
-            />
-          } />
+            {/* صفحة جميع البرطمانات*/}
+            <Route path="/Bocals" element={
+              <BocalsPage
+                addToCart={addToCart}
+                addToWishlist={addToWishlist}
+              />
+            } />
 
-          {/* صفحة جميع البرطمانات*/}
-          <Route path="/Bocals" element={
-            <BocalsPage
-              addToCart={addToCart}
-              addToWishlist={addToWishlist}
-            />
-          } />
+            {/* صفحة جميع القارورات */}
+            <Route path="/Bouchons" element={
+              <BouchonsPage
+                addToCart={addToCart}
+                addToWishlist={addToWishlist}
+              />
+            } />
 
-          {/* صفحة جميع القارورات */}
-          <Route path="/Bouchons" element={
-            <BouchonsPage
-              addToCart={addToCart}
-              addToWishlist={addToWishlist}
-            />
-          } />
+            {/* صفحة جميع القارورات */}
+            <Route path="/Préformes" element={
+              <PreformesPage
+                addToCart={addToCart}
+                addToWishlist={addToWishlist}
+              />
+            } />
 
-          {/* صفحة جميع القارورات */}
-          <Route path="/Préformes" element={
-            <PreformesPage
-              addToCart={addToCart}
-              addToWishlist={addToWishlist}
-            />
-          } />
+            {/* صفحة جميع القارورات */}
+            <Route path="/Poignées" element={
+              <PoigneesPage
+                addToCart={addToCart}
+                addToWishlist={addToWishlist}
+              />
+            } />
 
-          {/* صفحة جميع القارورات */}
-          <Route path="/Poignées" element={
-            <PoigneesPage
-              addToCart={addToCart}
-              addToWishlist={addToWishlist}
-            />
-          } />
+            <Route path="/product/:id" element={
+              <ProductDetailPage
+                addToCart={addToCart}
+                addToWishlist={addToWishlist}
+              />
+            } />
 
-          <Route path="/product/:id" element={
-            <ProductDetailPage 
-            addToCart={addToCart}
-            addToWishlist={addToWishlist}
-            />
-          } />
+          </Routes>
 
-        </Routes>
-
-        <Footer />
-      </div>
-    </BrowserRouter>
+          <Footer />
+        </div>
+      </BrowserRouter>
     </React.StrictMode>
   );
 }
