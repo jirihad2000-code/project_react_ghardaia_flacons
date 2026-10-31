@@ -6,9 +6,17 @@ import { animateProductToCart } from '../components/ProductsSection';
 
 
 const allBouteilles = [
-    { id: 1, image: 'assets/photos/23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100 },
-    { id: 2, image: 'assets/photos/23.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250 },
-    { id: 3, image: 'assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
+    { id: 101, image: 'assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 102, image: 'assets/photos/B12.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 103, image: 'assets/photos/B14 75CL.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 104, image: 'assets/photos/B17.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 105, image: 'assets/photos/B23.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 106, image: 'assets/photos/B27.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 107, image: 'assets/photos/B29.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 108, image: 'assets/photos/B34.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 109, image: 'assets/photos/B38.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+    { id: 110, image: 'assets/photos/B44.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
+
     // يمكنك إضافة جميع قاروراتك هنا
 ];
 
