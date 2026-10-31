@@ -87,10 +87,10 @@ export default function Header({
         {/*<nav className={`mainNav ${navOpen ? 'open' : ''}`} id="mainNav">*/}
         <ul ref={navRef} className={`nav-list ${navOpen ? 'open' : ''}`} id="mainNav">
           <li><a href='/' onClick={() => setNavOpen(false)}>Accueil</a></li>
-          <li><Link to='Entreprise' onClick={() => setNavOpen(false)}>Entreprise</Link></li>
-          <li><Link to='Categories' onClick={() => setNavOpen(false)}>Catégories</Link></li>
+          <li><Link to='/Entreprise' onClick={() => setNavOpen(false)}>Entreprise</Link></li>
+          <li><Link to='/Categories' onClick={() => setNavOpen(false)}>Catégories</Link></li>
           <li className="dropdown">
-            <Link to='Produits'><span className="menu-text">Produits</span>
+            <Link to='/Produits'><span className="menu-text">Produits</span>
             </Link>
             <ul className="nav-list1">
               <li>
@@ -137,8 +137,8 @@ export default function Header({
               </li>
             </ul>
           </li>
-          <li><Link to='Qualite' onClick={() => setNavOpen(false)}>Qualité</Link></li>
-          <li><Link to='Contact' onClick={() => setNavOpen(false)}>Contact</Link></li>
+          <li><Link to='/Qualite' onClick={() => setNavOpen(false)}>Qualité</Link></li>
+          <li><Link to='/Contact' onClick={() => setNavOpen(false)}>Contact</Link></li>
         </ul>
         {/*</nav>*/}
 
