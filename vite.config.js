@@ -7,5 +7,6 @@ export default defineConfig({
     port: 3000,
     open: true
   },
-  base: "/project_react_ghardaia_flacons/"
+  base: "/project_react_ghardaia_flacons/",
+  plugins: [react()],
 });
