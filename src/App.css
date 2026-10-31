@@ -625,8 +625,8 @@ header .nav-list {
 }
 
 
-.hero p {
-    font-size: 1.05;
+.hero .hero-card p {
+    font-size: 14px;
     color: black;
     line-height: 1.6;
     max-width: fit-content;
