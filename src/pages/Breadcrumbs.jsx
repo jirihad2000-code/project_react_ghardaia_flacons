@@ -17,7 +17,7 @@ export default function Breadcrumbs({ items = [] }) {
                   {item.label}
                 </span>
               ) : (
-                <a href={item.href}>
+                <a href={import.meta.env.BASE_URL + item.href}>
                   {item.label}
                 </a>
               )}
