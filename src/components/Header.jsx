@@ -115,7 +115,7 @@ export default function Header({
                 </Link>
               </li>
               <li>
-                <Link to='/préformes'>
+                <Link to='/Préformes'>
                   <span className="menu-item-text">
                     <span className="menu-text">Préformes</span>
                   </span>

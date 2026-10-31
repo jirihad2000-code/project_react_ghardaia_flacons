@@ -33,7 +33,7 @@ export default function PreformesPage({ addToCart, addToWishlist }) {
                 {/*
                 <h1>Toutes les Bouteilles & Flacons</h1>
                 <p>
-                    Découvrez notre gamme complète de bouteilles et flacons en PET de différentes capacités.
+                    Découvrez notre gamme complète de Bouteilles et flacons en PET de différentes capacités.
                 </p>*/ }
                 <div className="switcher-wrap">
                     <form className="woocommerce-ordering" method="get">

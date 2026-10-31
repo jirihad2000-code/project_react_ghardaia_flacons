@@ -2,35 +2,35 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../App.css';
 
-const bouteilles = [
+const Bouteilles = [
    { id: 101, image: 'assets/photos/B11.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 100, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
     { id: 102, image: 'assets/photos/B12.png', name: 'Flacons cosmétiques de 250ml à 400ml', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 103, image: 'assets/photos/B14 75CL.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
     { id: 104, image: 'assets/photos/B17.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouteilles', material: 'PET', weight: '45g', reference: 'B' },
 ];
 
-const bocals = [
+const Bocals = [
   { id: 1, image: 'assets/photos/BOC01.png', name: 'BOCAL001 0.5 KG', price: 21, category: 'Bocals', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 2, image: 'assets/photos/BOC02.png', name: 'BOCAL002 01 KG', price: 29, category: 'Bocals', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 3, image: 'assets/photos/BOC03.png', name: 'BOCAL003 02 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
     { id: 4, image: 'assets/photos/BOC04.png', name: 'BOCAL004 03 KG', price: 250, category: 'Bocals', material: 'PET', weight: '45g', reference: 'BOC' },
 ];
 
-const bouchons = [
+const Bouchons = [
   { id: 9, image: 'assets/photos/122.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
   { id: 10, image: 'assets/photos/134.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
   { id: 11, image: 'assets/photos/133.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
   { id: 12, image: 'assets/photos/143.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250 },
 ];
 
-const preformes = [
+const Préformes = [
   { id: 13, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250 },
   { id: 14, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250 },
   { id: 15, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250 },
   { id: 16, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250 },
 ];
 
-const poignees = [
+const Poignées = [
   { id: 17, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
   { id: 18, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
   { id: 19, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
@@ -146,7 +146,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
           </div>
           <div className="content">
             <img className="showcase-banner" src={import.meta.env.BASE_URL + "assets/image/43.jpg"} alt="Bouteilles" />
-            {renderProductGrid(bouteilles)}
+            {renderProductGrid(Bouteilles)}
           </div>
         </div>
 
@@ -158,7 +158,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
           </div>
           <div className="content">
             <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/32.jpg"} alt="Bocals" />
-            {renderProductGrid(bocals)}
+            {renderProductGrid(Bocals)}
           </div>
         </div>
 
@@ -170,7 +170,7 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
           </div>
           <div className="content">
             <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/35.jpg"} alt="Bouchons" />
-            {renderProductGrid(bouchons)}
+            {renderProductGrid(Bouchons)}
           </div>
         </div>
 
@@ -178,23 +178,23 @@ export default function ProductsSection({ addToCart, addToWishlist }) {
         <div className="produit">
           <div className="section-heading product-heading">
             <h1>Préformes</h1>
-            <button className="btn-discover" onClick={() => navigate('/Preformes')}>Découvrir</button>
+            <button className="btn-discover" onClick={() => navigate('/Préformes')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/42.jpg"} alt="Preformes" />
-            {renderProductGrid(preformes)}
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/42.jpg"} alt="Préformes" />
+            {renderProductGrid(Préformes)}
           </div>
         </div>
 
         {/* Poignées */}
         <div className="produit">
           <div className="section-heading product-heading">
-            <h1>poignées</h1>
-            <button className="btn-discover" onClick={() => navigate('/Poignees')}>Découvrir</button>
+            <h1>Poignées</h1>
+            <button className="btn-discover" onClick={() => navigate('/Poignées')}>Découvrir</button>
           </div>
           <div className="content">
-            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/40.jpg"} alt="poignees" />
-            {renderProductGrid(poignees)}
+            <img className="showcase-banner" src={import.meta.env.BASE_URL +"assets/image/40.jpg"} alt="Poignées" />
+            {renderProductGrid(Poignées)}
           </div>
         </div>
       </div>
