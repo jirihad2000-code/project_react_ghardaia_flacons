@@ -61,16 +61,16 @@ const allProducts = [
     { id: 204, image: 'assets/photos/143.png', name: 'FLACON EN VERRE AMBRÉ 50ml AVEC POMPE SPRAY', price: 250, category: 'Bouchons', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     
     /* Préformes */
-    { id: 13, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 14, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 15, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 16, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 300, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 30g STANDARD', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 301, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 38g LARGE', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 302, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 48g CONIQUE', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 304, image: 'assets/photos/B11.png', name: 'PRÉFORME PET 52g SPECIAL', price: 250, category: 'Préformes', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
     
     /* Poignées */
-    { id: 17, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 18, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 19, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
-    { id: 20, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 400, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 401, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 402, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
+    { id: 403, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250, category: 'Poignées', capacity: '50ml', material: 'PET', weight: '45g', reference: 'BOC' },
 ];
 
 export default function ProduitsPage({ addToCart, addToWishlist }) {
@@ -93,7 +93,7 @@ export default function ProduitsPage({ addToCart, addToWishlist }) {
                 </p>*/ }
                 <div className="switcher-wrap">
                     <form className="woocommerce-ordering" method="get">
-                        <select name="orderby" class="orderby" aria-label="Commande">
+                        <select name="orderby" className="orderby" aria-label="Commande">
                             <option value="date">Trier par catégorie</option>
                             <option value="date">Trier du plus récent au plus ancien</option>
                             <option value="price">Trier par tarif croissant</option>

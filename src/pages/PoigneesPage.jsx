@@ -6,14 +6,14 @@ import { animateProductToCart } from '../components/ProductsSection';
 
 
 const allPoignees = [
-    { id: 17, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
-    { id: 18, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
-    { id: 19, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
-    { id: 20, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250 },
-    { id: 17, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
-    { id: 18, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
-    { id: 19, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
-    { id: 20, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250 },
+    { id: 400, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
+    { id: 401, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
+    { id: 402, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
+    { id: 403, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250 },
+    { id: 404, image: 'assets/photos/108.jpeg', name: 'POIGNÉE PLASTIQUE POUR BIDON 5L', price: 250 },
+    { id: 405, image: 'assets/photos/110.jpeg', name: 'POIGNÉE ERGONOMIQUE 2L - 3L', price: 250 },
+    { id: 406, image: 'assets/photos/110.jpeg', name: 'POIGNÉE INDUSTRIELLE RENFORCÉE', price: 250 },
+    { id: 407, image: 'assets/photos/108.jpeg', name: 'POIGNÉE CLIPABLE POUR FLACON', price: 250 },
     // يمكنك إضافة جميع قاروراتك هنا
 ];
 
