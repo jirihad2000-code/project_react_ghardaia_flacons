@@ -37,7 +37,7 @@ export default function PoigneesPage({ addToCart, addToWishlist }) {
                 </p>*/ }
                 <div className="switcher-wrap">
                     <form className="woocommerce-ordering" method="get" >
-                        <select name="orderby" class="orderby" aria-label="Commande">
+                        <select name="orderby" className="orderby" aria-label="Commande">
                             <option value="popularity" selected="selected">Tri par popularité</option>
                             <option value="date">Tri du plus récent au plus ancien</option>
                             <option value="price">Tri par tarif croissant</option>

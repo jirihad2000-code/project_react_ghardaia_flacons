@@ -90,63 +90,32 @@ export default function Header({
 
         {/*<nav className={`mainNav ${navOpen ? 'open' : ''}`} id="mainNav">*/}
         <ul ref={navRef} className={`nav-list ${navOpen ? 'open' : ''}`} id="mainNav">
-          <li><Link to='/'>Accueil</Link></li>
-          <li><Link to='/Entreprise'>Entreprise</Link></li>
-          <li><Link to='/Categories'>Catégories</Link></li>
-          <li className="dropdown">
-            <Link to='/Produits' onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}>
-              <span className="dropdown-trigger">Produits<i className={`fa-solid fa-chevron-down ${productsDropdownOpen ? 'up' : 'down'}`} ></i></span> 
-                
-            </Link>
+          <li><Link to='/'><span>Accueil</span></Link></li>
+          <li><Link to='/Entreprise'><span>Entreprise</span></Link></li>
+          <li><Link to='/Categories'><span>Catégories</span></Link></li>
+          <li className={`dropdown ${productsDropdownOpen ? 'mobile-open' : ''}`}>            <div
+            className="dropdown-trigger"
+            onClick={() => {
+              // تفعيل الضغط في شاشات الهاتف فقط أو للتحكم بالتبديل
+              setProductsDropdownOpen(!productsDropdownOpen);
+            }}
+          >
+            <Link to='/Produits'><span>Produits</span></Link>
+            <i className={`fa-solid fa-chevron-down`}></i>
+          </div>
             {productsDropdownOpen && (
               <ul className="nav-list1">
-                <li>
-                  <Link to='/Bouteilles'>
-                    <span className="menu-item-text">
-                      <span className="menu-text">Bouteilles</span>
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/Bocals'>
-                    <span className="menu-item-text">
-                      <span className="menu-text">Bocals</span>
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/Bouchons'>
-                    <span className="menu-item-text">
-                      <span className="menu-text">Bouchons</span>
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/Préformes'>
-                    <span className="menu-item-text">
-                      <span className="menu-text">Préformes</span>
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/Poignées'>
-                    <span className="menu-item-text">
-                      <span className="menu-text">Poignées</span>
-                    </span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to='/Machines'>
-                    <span className="menu-item-text">
-                      <span className="menu-text">Machines importation</span>
-                    </span>
-                  </Link>
-                </li>
+                <li><Link to='/Bouteilles'><span >Bouteilles</span></Link></li>
+                <li><Link to='/Bocals'><span >Bocals</span></Link></li>
+                <li><Link to='/Bouchons'><span >Bouchons</span></Link></li>
+                <li><Link to='/Préformes'><span >Préformes</span></Link></li>
+                <li><Link to='/Poignées'><span >Poignées</span></Link></li>
+                <li><Link to='/Machines'><span >Machines importation</span></Link></li>
               </ul>
             )}
           </li>
-          <li><Link to='/Qualite' >Qualité</Link></li>
-          <li><Link to='/Contact' >Contact</Link></li>
+          <li><Link to='/Qualite'><span>Qualité</span></Link></li>
+          <li><Link to='/Contact'><span>Contact</span></Link></li>
         </ul>
         {/*</nav>*/}
 
