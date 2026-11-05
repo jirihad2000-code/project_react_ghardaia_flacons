@@ -13,6 +13,9 @@ export default function Header({
   const [navOpen, setNavOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
 
+  // حالة خاصة بفتح وإغلاق قائمة المنتجات المنسدلة
+  const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
+
   // مراجع القوائم
   const wishlistRef = useRef(null);
   const cartRef = useRef(null);
@@ -52,6 +55,7 @@ export default function Header({
         !menuToggleRef.current.contains(target)
       ) {
         setNavOpen(false);
+        setProductsDropdownOpen(false); // إغلاق قائمة المنتجات أيضاً عند إغلاق القائمة الرئيسية للهاتف
       }
     };
 
@@ -90,52 +94,56 @@ export default function Header({
           <li><Link to='/Entreprise'>Entreprise</Link></li>
           <li><Link to='/Categories'>Catégories</Link></li>
           <li className="dropdown">
-            <Link to='/Produits'><span className="menu-text">Produits</span>
+            <Link to='/Produits' onClick={() => setProductsDropdownOpen(!productsDropdownOpen)}>
+              <span className="dropdown-trigger">Produits<i className={`fa-solid fa-chevron-down ${productsDropdownOpen ? 'up' : 'down'}`} ></i></span> 
+                
             </Link>
-            <ul className="nav-list1">
-              <li>
-                <Link to='/Bouteilles'>
-                  <span className="menu-item-text">
-                    <span className="menu-text">Bouteilles</span>
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to='/Bocals'>
-                  <span className="menu-item-text">
-                    <span className="menu-text">Bocals</span>
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to='/Bouchons'>
-                  <span className="menu-item-text">
-                    <span className="menu-text">Bouchons</span>
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to='/Préformes'>
-                  <span className="menu-item-text">
-                    <span className="menu-text">Préformes</span>
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to='/Poignées'>
-                  <span className="menu-item-text">
-                    <span className="menu-text">Poignées</span>
-                  </span>
-                </Link>
-              </li>
-              <li>
-                <Link to='/Machines'>
-                  <span className="menu-item-text">
-                    <span className="menu-text">Machines importation</span>
-                  </span>
-                </Link>
-              </li>
-            </ul>
+            {productsDropdownOpen && (
+              <ul className="nav-list1">
+                <li>
+                  <Link to='/Bouteilles'>
+                    <span className="menu-item-text">
+                      <span className="menu-text">Bouteilles</span>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/Bocals'>
+                    <span className="menu-item-text">
+                      <span className="menu-text">Bocals</span>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/Bouchons'>
+                    <span className="menu-item-text">
+                      <span className="menu-text">Bouchons</span>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/Préformes'>
+                    <span className="menu-item-text">
+                      <span className="menu-text">Préformes</span>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/Poignées'>
+                    <span className="menu-item-text">
+                      <span className="menu-text">Poignées</span>
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link to='/Machines'>
+                    <span className="menu-item-text">
+                      <span className="menu-text">Machines importation</span>
+                    </span>
+                  </Link>
+                </li>
+              </ul>
+            )}
           </li>
           <li><Link to='/Qualite' >Qualité</Link></li>
           <li><Link to='/Contact' >Contact</Link></li>
