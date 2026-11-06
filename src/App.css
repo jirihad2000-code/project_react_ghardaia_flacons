@@ -429,13 +429,14 @@ header .nav-list {
         display: none;
         position: absolute;
         width: 50%;
-        align-items: center;
-        justify-content: center;
         right: 0;
         top: 100%;
+        bottom: 0;
+        height: 100vh;
         background: #fff;
         flex-direction: column;
-        overflow-y: hidden;
+        overflow-y: auto;
+        
     }
 
     .nav-list li {
