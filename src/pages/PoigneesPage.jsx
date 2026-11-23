@@ -43,10 +43,7 @@ export default function PoigneesPage({ addToCart, addToWishlist }) {
                             <option value="price">Tri par tarif croissant</option>
                             <option value="price-desc">Tri par tarif décroissant</option>
                         </select>
-                    </form>
-
-                    <p className="woocommerce-result-count" role="alert" aria-relevant="all" data-is-sorted-by="true" aria-hidden="false">
-                        Affichage de 1–12 sur 26 résultats</p>
+                    </form>   
                 </div>
 
                 <div className="product-grid">

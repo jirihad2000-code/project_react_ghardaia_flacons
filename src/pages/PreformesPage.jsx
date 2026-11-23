@@ -45,8 +45,7 @@ export default function PreformesPage({ addToCart, addToWishlist }) {
                         </select>
                     </form>
 
-                    <p className="woocommerce-result-count" role="alert" aria-relevant="all" data-is-sorted-by="true" aria-hidden="false">
-                        Affichage de 1–12 sur 26 résultats</p>
+                    
                 </div>
 
                 <div className="product-grid">

@@ -31,7 +31,7 @@ export default function ContactSection() {
             
           </div>
         </div>
-
+        
         <form id="quoteForm" className="quote-form" action="https://formsubmit.co/jiri.had2000@gmail.com" method="POST">
           <h3>contactez-nous</h3>
           <label className="form-label">
